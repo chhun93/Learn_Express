@@ -75,19 +75,6 @@ app.get("/create", function (request, response) {
 });
 
 app.post("/create", function (request, response) {
-  // var body = "";
-  // request.on("data", function (data) {
-  //   body = body + data;
-  // });
-  // request.on("end", function () {
-  //   var post = qs.parse(body);
-  //   var title = post.title;
-  //   var description = post.description;
-  //   fs.writeFile(`data/${title}`, description, "utf8", function (err) {
-  //     response.redirect(`/page/${title}`);
-  //   });
-  // });
-  //use middleware_bodyParser
   var post = request.body;
   var title = post.title;
   var description = post.description;
